@@ -37,7 +37,6 @@ $height: 600px;
 	background-color:#ffffff;
 }
 
-
 #wrapper {
 	@extend .abs-pos;
 	position: relative;	
@@ -61,16 +60,14 @@ $height: 600px;
 	//left:-64px;
 }
 
+
 #copy-1 {
 	@extend .abs-pos;
 }
+
 #copy-2 {
 	@extend .abs-pos;
 }
-#copy-2b {
-	@extend .abs-pos;
-}
-
 
 #copy-3 {
 	@extend .abs-pos;

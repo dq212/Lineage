@@ -99,13 +99,13 @@ var nameSpace = Lineage || {};
 
 		timeline
 		
-			.to(["#copy-1"], 0.4, { ransformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Linear.easeNone})
+			.to("#copy-1", 0.4, { ransformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Linear.easeNone})
 
-			.to(["#copy-1"], 0.4, { ransformPerspective: 400, autoAlpha: 0, force3D: true, rotationZ: 0.01, ease: Linear.easeNone}, "+=2.6")
+			.to("#copy-1", 0.4, { ransformPerspective: 400, autoAlpha: 0, force3D: true, rotationZ: 0.01, ease: Linear.easeNone}, "+=2.6")
 		
-			.to(["#copy-2"], 0.4, { transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "-=0.")
+			.to("#copy-2", 0.4, { transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "-=0.")
 
-			.to(["#legal, #copy-2"], 0.4, { transformPerspective: 400, autoAlpha: 0, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=3")
+			.to(["#legal", 	"#copy-2"], 0.4, { transformPerspective: 400, autoAlpha: 0, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=3")
 
 			.to(["#copy-3"], 0.3, { transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=0.0")
 

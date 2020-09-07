@@ -76,6 +76,7 @@ gulp.task('html', function () {
 });
 
 (function (tasks) {
+  console.log("mytasks " + tasks)
   tasks.forEach(function (task) {
     gulp.task('sass' + task.append, function (done) {
       gulp.src('./sass/*.scss')
@@ -111,7 +112,8 @@ gulp.task('html', function () {
       return del(src + '/img/sprites');
     });
   });
-})([
+})
+([
   { append: '', force: false },
   { append: 'Force', force: true }
 ]);
