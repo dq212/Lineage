@@ -4,7 +4,7 @@ var imageSize = require('image-size');
 describe('zipfile', function () {
 	it('should be under 150k', function () {
 
-		var zip = fs.statSync('PG_AD_AUG20_300x250_IDTheft_NO_V1-HTML.zip');
+		var zip = fs.statSync('PG_AD_AUG20_300x250_Know_BeforeNO_V1-HTML.zip');
 		var fileSizeInKB = zip['size'] / 1000;
 		expect(fileSizeInKB).not.toBeGreaterThan(150, '\nZip size is ' + fileSizeInKB + 'kb, it should be less than 150kb');
 	});

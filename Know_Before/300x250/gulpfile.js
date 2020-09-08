@@ -187,7 +187,7 @@ gulp.task('imageCompress', ['copy', 'sass'], function (done) {
 
 gulp.task('compress', ['clean', 'copy', 'sass', 'inline', 'replace', 'htmlmin', 'imageCompress'], function () {
   return gulp.src(dist + '/*')
-    .pipe(zip('PG_AD_AUG20_300x250_IDTheft_NO_V1-HTML.zip'))
+    .pipe(zip('PG_AD_AUG20_300x250_Know_BeforeNO_V1-HTML.zip'))
     .pipe(gulp.dest('./'));
 });
 
