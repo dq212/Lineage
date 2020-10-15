@@ -190,7 +190,7 @@ gulp.task('copy', ['clean', 'cleanSprites'], function () {
 gulp.task('copyStatic', function () {
   gulp
     .src('./src/img/static.jpg')
-    .pipe(rename('PG_Credit_160x600_STATIC.jpg'))
+    .pipe(rename('PG_Mix_160x600_STATIC.jpg'))
     .pipe(gulp.dest('../STATICS/'));
 });
 
@@ -257,7 +257,7 @@ gulp.task(
   function () {
     return gulp
       .src(dist + '/*')
-      .pipe(zip('PG_ID_Theft_160x600_HTML.zip'))
+      .pipe(zip('PG_Mix_160x600_HTML.zip'))
       .pipe(gulp.dest('../HTML/'));
   }
 );

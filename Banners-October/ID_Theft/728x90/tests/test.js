@@ -3,7 +3,7 @@ var imageSize = require('image-size');
 
 describe('zipfile', function () {
   it('should be under 150 resize-bannekb', function () {
-    var zip = fs.statSync('PG_Credit_728x90_HTML.zip');
+    var zip = fs.statSync('PG_ID_Theft_728x90_HTML.zip');
     var fileSizeInKB = zip['size'] / 1000;
     expect(fileSizeInKB).not.toBeGreaterThan(
       150,
