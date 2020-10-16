@@ -2,8 +2,8 @@ var fs = require('fs');
 var imageSize = require('image-size');
 
 describe('zipfile', function () {
-  it('should be under 150 resize-bannekb', function () {
-    var zip = fs.statSync('PG_Mix_300x600_HTML.zip');
+  it('should be under 150kb', function () {
+    var zip = fs.statSync('../HTML/PG_Mix_300x600_HTML.zip');
     var fileSizeInKB = zip['size'] / 1000;
     expect(fileSizeInKB).not.toBeGreaterThan(
       150,
@@ -17,7 +17,7 @@ describe('static image', function () {
     var dimensions = imageSize('src/img/static.jpg');
 
     expect(dimensions.width).toBe(
-      160,
+      300,
       '\nIncorrect width on the static image. It should be 300px wide'
     );
     expect(dimensions.height).toBe(

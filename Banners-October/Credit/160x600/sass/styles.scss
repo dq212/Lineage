@@ -46,10 +46,10 @@ $height: 600px;
   position: relative;
 }
 
-#bg-color {
-  @extend .abs-pos;
-  background-color: #ffffff;
-}
+// #bg-color {
+//   @extend .abs-pos;
+//   background-color: #ffffff;
+// }
 
 #wrapper {
   @extend .abs-pos;
