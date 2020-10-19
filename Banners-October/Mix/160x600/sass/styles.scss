@@ -32,7 +32,7 @@ $height: 600px;
 
 #bg {
   @extend .abs-pos;
-  //background-color:#ffffff;
+  background-color:#ffffff;
   // background-color: #006098;
   // background-image: url(../img/bg.gif);
 }
@@ -46,10 +46,10 @@ $height: 600px;
   position: relative;
 }
 
-#bg-color {
-  @extend .abs-pos;
-  background-color: #ffffff;
-}
+// #bg-color {
+//   @extend .abs-pos;
+//   background-color: #ffffff;
+// }
 
 #wrapper {
   @extend .abs-pos;

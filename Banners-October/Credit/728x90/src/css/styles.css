@@ -60,6 +60,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 90px;
   overflow: hidden; }
 
+#bg {
+  background-color: #ffffff; }
+
 #wrapper {
   position: relative;
   visibility: hidden; }
