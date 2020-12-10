@@ -11,7 +11,7 @@ var nameSpace = LINEAGE || {};
     ids = [];
 
     width = 300;
-    height = 250;
+    height = 600;
 
     //SET IDs IN DOM TO GLOBAL VARIABLES
     var allElements = document.getElementsByTagName('*');
@@ -24,7 +24,8 @@ var nameSpace = LINEAGE || {};
         if (
           el.id !== 'wrapper' &&
           el.id !== 'click_through' &&
-          el.id !== 'bg'
+          el.id !== 'bg' &&
+          el.id !== 'bg-color'
         ) {
           ids.push(el);
           gsap.set(ids, {autoAlpha:0})
@@ -61,7 +62,7 @@ var nameSpace = LINEAGE || {};
       gsap.to('#cta', 0.1, {
         scale: 1.1,
         y: 0,
-        transformOrigin: '90% 95%',
+        transformOrigin: '50% 65%',
         rotationZ: 0.01,
         force3D: true,
         rotationZ: 0.01,
@@ -143,7 +144,7 @@ var nameSpace = LINEAGE || {};
       )
 
       .to(
-        ['#copy-2', '#copy-static-1', '#copy-static-2','#cta '],
+        ['#copy-2', '#copy-static-1', '#copy-static-2', '#logo-img', '#cta '],
         
         {duration:0.4,
           transformPerspective: 400,
