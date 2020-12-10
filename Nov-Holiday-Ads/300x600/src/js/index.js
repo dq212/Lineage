@@ -35,7 +35,7 @@ var nameSpace = LINEAGE || {};
 
     // gsap.set("#allNums", { autoAlpha: 0 });
 
-    gsap.set(['#copy-1', '#logo-img'], { x: 0, y: 0, autoAlpha: 1 });
+    gsap.set(['#copy-1', '#logo-img', '#logo'], { x: 0, y: 0, autoAlpha: 1 });
     // gsap.set(['#copy-2', '#copy-3', '#cta'], {
     //   x: 0,
     //   autoAlpha: 0,
@@ -144,7 +144,7 @@ var nameSpace = LINEAGE || {};
       )
 
       .to(
-        ['#copy-2', '#copy-static-1', '#copy-static-2', '#logo-img', '#cta '],
+        ['#copy-2', '#copy-static-1', '#copy-static-2', '#cta '],
         
         {duration:0.4,
           transformPerspective: 400,
@@ -159,7 +159,6 @@ var nameSpace = LINEAGE || {};
 
  
 
-      .to('#logo',  { duration:0.4, autoAlpha: 1, ease: Cubic.easeInOut }, '+=0.5')
 
       .to(
         ['#cta', '#code'],
