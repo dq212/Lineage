@@ -45,12 +45,14 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-*, :before, :after {
+*,
+:before,
+:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.abs-pos, #bg, #wrapper, #click_through, #border-gradient, #line, #logo, #logo-img, #copy-1, #copy-2, #copy-3, #copy-static-1, #copy-static-2, #legal, #cta {
+.abs-pos, #bg, #wrapper, #click_through, #border-gradient, #line, #logo, #logo-img, #copy-1, #copy-2, #copy-static-1, #copy-static-2, #legal, #cta {
   position: absolute;
   top: 0px;
   left: 0px;
