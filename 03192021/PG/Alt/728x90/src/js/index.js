@@ -34,6 +34,7 @@ var nameSpace = LINEAGE || {};
         // TweenMax.set("#allNums", { autoAlpha: 0 });
 
         TweenMax.set(["#copy-1"], { x: 0, y: 0, autoAlpha: 1 });
+        TweenMax.set(["#copy-2"], { x: 0, y: 12, autoAlpha: 1 });
         TweenMax.set(
             ["#copy-2", "#copy-3", "#copy-4", "#copy-5", "#copy-6", "#legal", "#cta"], {
                 x: 0,
@@ -186,6 +187,18 @@ var nameSpace = LINEAGE || {};
                     ease: Power2.easeIn,
                 },
                 "+=1.5"
+            )
+
+        .to(
+                ["#copy-2"],
+                0.4, {
+                    transformPerspective: 400,
+                    force3D: true,
+                    rotationZ: 0.01,
+                    y: 0,
+                    ease: Power2.easeIn,
+                },
+                "+=0"
             )
             .to(
                 ["#copy-5"],
